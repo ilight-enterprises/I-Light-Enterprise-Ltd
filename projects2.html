@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Projects - page 2 | I Light Enterprises Ltd</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#111;
+    color:white;
+}
+
+header{
+    background:#000;
+    padding:20px;
+    text-align:center;
+    border-bottom:3px solid gold;
+}
+
+header img{
+    width:120px;
+    margin-bottom:10px;
+}
+
+header h1{
+    color:gold;
+    margin-bottom:10px;
+}
+
+.back-btn{
+    display:inline-block;
+    margin-top:15px;
+    padding:12px 25px;
+    background:gold;
+    color:#000;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+    padding:40px;
+}
+
+.gallery img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    border-radius:10px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.gallery img:hover{
+    transform:scale(1.05);
+}
+.page-navigation{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 40px 50px;
+}
+
+@media (max-width:768px){
+
+.page-navigation{
+    flex-direction:column;
+    gap:20px;
+}
+
+}
+.image-modal{
+    display:none;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.95);
+    justify-content:center;
+    align-items:center;
+    z-index:9999;
+}
+
+.modal-content{
+    max-width:87%;
+    max-height:75vh;
+    border-radius:10px;
+    box-shadow:0 0 20px rgba(255,215,0,0.5);
+}
+.close{
+    position:absolute;
+    top:20px;
+    right:35px;
+    color:white;
+    font-size:45px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.close:hover{
+    color:gold;
+}
+
+.nav-btn{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    background:rgba(255,215,0,0.8);
+    color:black;
+    border:none;
+    font-size:30px;
+    padding:15px 20px;
+    cursor:pointer;
+    border-radius:50%;
+}
+
+.nav-btn:hover{
+    background:gold;
+}
+
+.prev{
+    left:20px;
+}
+
+.next{
+    right:20px;
+}
+.modal-wrapper{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.image-counter{
+    color:gold;
+    font-size:20px;
+    margin-top:15px;
+    font-weight:bold;
+}
+.zoom-controls{
+    position:absolute;
+    top:20px;
+    left:20px;
+    display:flex;
+    gap:10px;
+}
+
+.zoom-controls button{
+    background:gold;
+    color:black;
+    border:none;
+    padding:10px 15px;
+    border-radius:6px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.zoom-controls button:hover{
+    background:#ffd700;
+}
+.zoom-controls{
+    position:absolute;
+    top:20px;
+    left:20px;
+    display:flex;
+    gap:10px;
+    z-index:10000;
+}
+
+.zoom-controls button{
+    background:gold;
+    color:#000;
+    border:none;
+    padding:10px 15px;
+    border-radius:8px;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.zoom-controls button:hover{
+    background:#ffd700;
+    transform:scale(1.1);
+}
+</style>
+</head>
+
+<body>
+
+<header>
+
+<img src="logo.png" alt="I Light Enterprises Ltd Logo">
+
+<h1>Our Projects</h1>
+
+<p>Take a look at some of our completed construction and renovation projects.</p>
+
+<span class="back-btn">Page 2 of 5</span>
+
+</header>
+
+<div class="gallery">
+<img src="images/projects/project (26).jpg" alt="Project 26">
+<img src="images/projects/project (27).jpg" alt="Project 27">
+<img src="images/projects/project (28).jpg" alt="Project 28">
+<img src="images/projects/project (29).jpg" alt="Project 29">
+<img src="images/projects/project (30).jpg" alt="Project 30">
+<img src="images/projects/project (31).jpg" alt="Project 31">
+<img src="images/projects/project (32).jpg" alt="Project 32">
+<img src="images/projects/project (33).jpg" alt="Project 33">
+<img src="images/projects/project (34).jpg" alt="Project 34">
+<img src="images/projects/project (35).jpg" alt="Project 35">
+<img src="images/projects/project (36).jpg" alt="Project 36">
+<img src="images/projects/project (37).jpg" alt="Project 37">
+<img src="images/projects/project (38).jpg" alt="Project 38">
+<img src="images/projects/project (39).jpg" alt="Project 39">
+<img src="images/projects/project (40).jpg" alt="Project 40">
+<img src="images/projects/project (41).jpg" alt="Project 41">
+<img src="images/projects/project (42).jpg" alt="Project 42">
+<img src="images/projects/project (43).jpg" alt="Project 43">
+<img src="images/projects/project (44).jpg" alt="Project 44">
+<img src="images/projects/project (45).jpg" alt="Project 45">
+<img src="images/projects/project (46).jpg" alt="Project 46">
+<img src="images/projects/project (47).jpg" alt="Project 47">
+<img src="images/projects/project (48).jpg" alt="Project 48">
+<img src="images/projects/project (49).jpg" alt="Project 49">
+<img src="images/projects/project (50).jpg" alt="Project 50">
+</div>
+<div class="page-navigation">
+
+   <a href="projects.html" class="back-btn">← Previous Page</a>
+
+<a href="projects3.html" class="back-btn">Next Page →</a>
+</div>
+<div id="imageModal" class="image-modal">
+    <span class="close">&times;</span>
+
+    <button class="nav-btn prev">&#10094;</button>
+
+<div class="zoom-controls">
+    <button id="zoomOut">−</button>
+    <button id="resetZoom">Reset</button>
+    <button id="zoomIn">+</button>
+</div>
+
+<div class="modal-wrapper">
+    
+        <img class="modal-content" id="expandedImg">
+        <p id="imageCounter" class="image-counter"></p>
+    </div>
+
+    <button class="nav-btn next">&#10095;</button>
+</div>
+<script>
+const modal = document.getElementById("imageModal");
+const modalImg = document.getElementById("expandedImg");
+const images = document.querySelectorAll(".gallery img");
+const closeBtn = document.querySelector(".close");
+const prevBtn = document.querySelector(".prev");
+const nextBtn = document.querySelector(".next");
+const counter = document.getElementById("imageCounter");
+const zoomIn = document.getElementById("zoomIn");
+const zoomOut = document.getElementById("zoomOut");
+const resetZoom = document.getElementById("resetZoom");
+
+let zoomLevel = 1;
+
+
+let currentIndex = 0;
+
+function showImage(index){
+    currentIndex = index;
+    modal.style.display = "flex";
+    modalImg.src = images[currentIndex].src;
+    counter.textContent = (currentIndex + 26) + " / 85";
+
+    zoomLevel = 1;
+    modalImg.style.transform = "scale(1)";
+}
+images.forEach((img,index)=>{
+    img.addEventListener("click",()=>{
+        showImage(index);
+    });
+});
+
+closeBtn.addEventListener("click",()=>{
+    modal.style.display="none";
+});
+
+modal.addEventListener("click",(e)=>{
+    if(e.target===modal){
+        modal.style.display="none";
+    }
+});
+
+prevBtn.addEventListener("click",(e)=>{
+    e.stopPropagation();
+    currentIndex=(currentIndex-1+images.length)%images.length;
+    showImage(currentIndex);
+});
+
+nextBtn.addEventListener("click",(e)=>{
+    e.stopPropagation();
+    currentIndex=(currentIndex+1)%images.length;
+    showImage(currentIndex);
+});
+
+document.addEventListener("keydown",(e)=>{
+    if(modal.style.display==="flex"){
+        if(e.key==="ArrowLeft"){
+            currentIndex=(currentIndex-1+images.length)%images.length;
+            showImage(currentIndex);
+        }
+        if(e.key==="ArrowRight"){
+            currentIndex=(currentIndex+1)%images.length;
+            showImage(currentIndex);
+        }
+        if(e.key==="Escape"){
+            modal.style.display="none";
+        }
+    }
+});
+zoomIn.addEventListener("click", function(e){
+    e.stopPropagation();
+    zoomLevel += 0.2;
+    modalImg.style.transform = `scale(${zoomLevel})`;
+});
+
+zoomOut.addEventListener("click", function(e){
+    e.stopPropagation();
+    if(zoomLevel > 0.4){
+        zoomLevel -= 0.2;
+        modalImg.style.transform = `scale(${zoomLevel})`;
+    }
+});
+
+resetZoom.addEventListener("click", function(e){
+    e.stopPropagation();
+    zoomLevel = 1;
+    modalImg.style.transform = "scale(1)";
+});
+</script>
+</body>
+</html>

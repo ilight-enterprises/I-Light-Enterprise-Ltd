@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Project Videos | I Light Enterprises Ltd</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#111;
+    color:#fff;
+}
+
+header{
+    background:#000;
+    text-align:center;
+    padding:20px;
+    border-bottom:3px solid gold;
+}
+
+header img{
+    width:120px;
+    margin-bottom:10px;
+}
+
+header h1{
+    color:gold;
+    margin-bottom:10px;
+}
+
+header p{
+    margin-bottom:15px;
+}
+
+.page-tag{
+    display:inline-block;
+    background:gold;
+    color:#000;
+    padding:12px 25px;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+    padding:40px;
+}
+
+.gallery video{
+    width:100%;
+    height:260px;
+    object-fit:cover;
+    border-radius:10px;
+    cursor:pointer;
+    background:#000;
+    transition:.3s;
+}
+
+.gallery video:hover{
+    transform:scale(1.03);
+    box-shadow:0 0 15px gold;
+}
+
+.page-navigation{
+    display:flex;
+    justify-content:space-between;
+    padding:20px 40px 50px;
+}
+
+.back-btn{
+    background:gold;
+    color:#000;
+    text-decoration:none;
+    padding:12px 25px;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+.video-modal{
+    display:none;
+    position:fixed;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.95);
+    justify-content:center;
+    align-items:center;
+    z-index:9999;
+}
+
+.modal-video{
+    width:85%;
+    max-height:80vh;
+    border-radius:10px;
+}
+
+.close{
+    position:absolute;
+    top:20px;
+    right:35px;
+    color:#fff;
+    font-size:45px;
+    cursor:pointer;
+}
+
+.close:hover{
+    color:gold;
+}
+
+.nav-btn{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    background:gold;
+    border:none;
+    color:#000;
+    font-size:28px;
+    padding:15px 20px;
+    cursor:pointer;
+    border-radius:50%;
+}
+
+.prev{
+    left:20px;
+}
+
+.next{
+    right:20px;
+}
+
+.counter{
+    position:absolute;
+    bottom:30px;
+    color:gold;
+    font-size:22px;
+    font-weight:bold;
+}
+
+@media(max-width:768px){
+
+.gallery{
+grid-template-columns:1fr;
+padding:20px;
+}
+
+.modal-video{
+width:95%;
+}
+
+.page-navigation{
+flex-direction:column;
+gap:20px;
+}
+
+}
+.back-popup{
+    position:absolute;
+    top:20px;
+    left:20px;
+    background:gold;
+    color:#000;
+    border:none;
+    padding:10px 20px;
+    border-radius:8px;
+    font-weight:bold;
+    cursor:pointer;
+    z-index:10000;
+}
+
+.back-popup:hover{
+    background:#ffd700;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<img src="logo.png" alt="Logo">
+
+<h1>Project Videos</h1>
+
+<p>Watch some of our completed construction and renovation projects in action.</p>
+
+<span class="page-tag">Page 5 of 5</span>
+
+</header>
+
+<div class="gallery">
+
+<video src="videos/video (1).mp4" controls playsinline preload="metadata"></video>
+<video src="videos/video (2).mp4" controls playsinline preload="metadata"></video>
+<video src="videos/video (3).mp4" controls playsinline preload="metadata"></video>
+<video src="videos/video (4).mp4" controls playsinline preload="metadata"></video>
+<video src="videos/video (5).mp4" controls playsinline preload="metadata"></video>
+<video src="videos/video (6).mp4" controls playsinline preload="metadata"></video>
+<video src="videos/video (7).mp4" controls playsinline preload="metadata"></video>
+<video src="videos/video (8).mp4" controls playsinline preload="metadata"></video>
+<video src="videos/video (9).mp4" controls playsinline preload="metadata"></video>
+<video src="videos/video (10).mp4" controls playsinline preload="metadata"></video>
+<video src="videos/video (11).mp4" controls playsinline preload="metadata"></video>
+<video src="videos/video (12).mp4" controls playsinline preload="metadata"></video>
+<video src="videos/video (13).mp4" controls playsinline preload="metadata"></video>
+<video src="videos/video (14).mp4" controls playsinline preload="metadata"></video>
+<video src="videos/video (15).mp4" controls playsinline preload="metadata"></video>
+<video src="videos/video (16).mp4" controls playsinline preload="metadata"></video>
+<video src="videos/video (17).mp4" controls playsinline preload="metadata"></video>
+<video src="videos/video (18).mp4" controls playsinline preload="metadata"></video>
+<video src="videos/video (19).mp4" controls playsinline preload="metadata"></video>
+<video src="videos/video (20).mp4" controls playsinline preload="metadata"></video>
+<video src="videos/video (21).mp4" controls playsinline preload="metadata"></video>
+<video src="videos/video (22).mp4" controls playsinline preload="metadata"></video>
+<video src="videos/video (23).mp4" controls playsinline preload="metadata"></video>
+<video src="videos/video (24).mp4" controls playsinline preload="metadata"></video>
+<video src="videos/video (25).mp4" controls playsinline preload="metadata"></video>
+<video src="videos/video (26).mp4" controls playsinline preload="metadata"></video>
+<video src="videos/video (27).mp4" controls playsinline preload="metadata"></video>
+
+</div>
+
+
+<div class="page-navigation">
+
+<a href="projects4.html" class="back-btn">← Previous Page</a>
+
+<a href="index.html#projects" class="back-btn">🏠 Projects Home</a>
+
+</div>
+
+<div class="video-modal" id="videoModal">
+
+<span class="close">&times;</span>
+<button id="backBtn" class="back-popup">← Back</button>
+
+<button class="nav-btn prev">&#10094;</button>
+
+<video id="popupVideo" class="modal-video" controls></video>
+
+<button class="nav-btn next">&#10095;</button>
+
+<div class="counter" id="videoCounter"></div>
+
+</div>
+<script>
+
+const modal = document.getElementById("videoModal");
+const popupVideo = document.getElementById("popupVideo");
+const videos = document.querySelectorAll(".gallery video");
+const closeBtn = document.querySelector(".close");
+const prevBtn = document.querySelector(".prev");
+const nextBtn = document.querySelector(".next");
+const counter = document.getElementById("videoCounter");
+const backBtn = document.getElementById("backBtn");
+
+let currentIndex = 0;
+
+function openVideo(index){
+
+    currentIndex = index;
+
+    popupVideo.src = videos[currentIndex].src;
+
+    counter.textContent = (currentIndex + 1) + " / " + videos.length;
+
+    modal.style.display = "flex";
+
+    popupVideo.play();
+
+}
+
+videos.forEach((video,index)=>{
+
+    video.addEventListener("click",()=>{
+
+        openVideo(index);
+
+    });
+
+});
+
+closeBtn.addEventListener("click",()=>{
+
+    popupVideo.pause();
+
+    popupVideo.currentTime = 0;
+
+    modal.style.display = "none";
+
+});
+backBtn.addEventListener("click",()=>{
+    popupVideo.pause();
+    popupVideo.currentTime = 0;
+    modal.style.display = "none";
+});
+modal.addEventListener("click",(e)=>{
+
+    if(e.target===modal){
+
+        popupVideo.pause();
+
+        popupVideo.currentTime = 0;
+
+        modal.style.display = "none";
+
+    }
+
+});
+
+prevBtn.addEventListener("click",(e)=>{
+
+    e.stopPropagation();
+
+    currentIndex = (currentIndex - 1 + videos.length) % videos.length;
+
+    openVideo(currentIndex);
+
+});
+
+nextBtn.addEventListener("click",(e)=>{
+
+    e.stopPropagation();
+
+    currentIndex = (currentIndex + 1) % videos.length;
+
+    openVideo(currentIndex);
+
+});
+
+document.addEventListener("keydown",(e)=>{
+
+    if(modal.style.display==="flex"){
+
+        if(e.key==="ArrowLeft"){
+
+            currentIndex = (currentIndex - 1 + videos.length) % videos.length;
+
+            openVideo(currentIndex);
+
+        }
+
+        if(e.key==="ArrowRight"){
+
+            currentIndex = (currentIndex + 1) % videos.length;
+
+            openVideo(currentIndex);
+
+        }
+
+        if(e.key==="Escape"){
+
+            popupVideo.pause();
+
+            popupVideo.currentTime = 0;
+
+            modal.style.display="none";
+
+        }
+
+    }
+
+});
+
+</script>
+
+</body>
+</html>/
