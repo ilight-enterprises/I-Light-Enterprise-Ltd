@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ilight-enterprises.github.io/I-Light-Enterprise-Ltd/sitemap.xml
